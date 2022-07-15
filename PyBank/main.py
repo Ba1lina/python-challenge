@@ -24,7 +24,7 @@ with open(budget_data_csv) as csvfile:
 #convert the profit and loss list into integers for further evaluation
 profit_loss_list = [int(i) for i in profit_loss_list]
 
-#calculate the monthly change in profits
+#calculate the monthly change in profits between consecutive items in the list
 monthly_change = [profit_loss_list[i+1]-profit_loss_list[i] for i in range(len(profit_loss_list)-1)]
 
 #complete analysis calculations
@@ -48,8 +48,7 @@ decrease_index = monthly_change.index(decrease_profits)+1
 increase_month = months_list[increase_index]
 decrease_month= months_list[decrease_index]
 
-
-#Creating variables for the Financial Analysis output to keep both outputs the same
+#Creating variables for the Financial Analysis to keep the format of both outputs the same
 title ="Financial Analysis"
 space=  "-" *25
 result1= f"Total Months: {total_months}"

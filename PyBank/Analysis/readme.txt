@@ -1,7 +1,7 @@
-Testing Analysis
+Financial Analysis
 -------------------------
 Total Months: 86
 Total: $22564198
-Average Change: $262374
-Greatest Increase in Profits: 
-Greatest Decrease in Profits: 
+Average Change: $-8311.11
+Greatest Increase in Profits: Aug-16 ($1862002)
+Greatest Decrease in Profits: Feb-14 ($-1825558)

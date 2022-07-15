@@ -52,7 +52,11 @@ percent_candidate2_dec = round(percent_candidate2*100,2)
 percent_candidate3_dec = round(percent_candidate3*100,2)
 
 #determine the winner
-
+if total_candidate1 > total_candidate2 and total_candidate1 > total_candidate3:
+    winner = candidate1
+elif total_candidate2 > total_candidate1 and total_candidate2 > total_candidate3:
+    winner = candidate2
+else: winner = candidate3
 
 #Creating variables for the Election Results to keep the format of both outputs the same
 title ="Election Results"
@@ -61,8 +65,8 @@ result1= f"Total Votes: {total_votes}"
 result2= f"{candidate1}: {percent_candidate1_dec}% ({total_candidate1})"
 result3 = f"{candidate2}: {percent_candidate2_dec}% ({total_candidate2})"
 result4 = f"{candidate3}: {percent_candidate3_dec}% ({total_candidate3}))"
-result5 = f"Winner:)"
-lines = [title,space,result1,space,result2,result3,result4,space,result5]
+result5 = f"Winner: {winner}"
+lines = [title,space,result1,space,result2,result3,result4,space,result5, space]
 
 #Print output of Election Results to a text file
 with open('Analysis/election_results.txt', 'w') as f:

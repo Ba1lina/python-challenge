@@ -59,7 +59,7 @@ result5 = f"Greatest Decrease in Profits: {decrease_month} (${decrease_profits})
 lines = [title,space,result1,result2,result3,result4,result5]
 
 #Print output of Financial Analysis to a text file
-with open('Analysis/readme.txt', 'w') as f:
+with open('Analysis/Financial Analysis.txt', 'w') as f:
     for line in lines:
         f.write(line)
         f.write('\n')

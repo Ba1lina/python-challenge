@@ -64,7 +64,7 @@ space=  "-" *25
 result1= f"Total Votes: {total_votes}"
 result2= f"{candidate1}: {percent_candidate1_dec}% ({total_candidate1})"
 result3 = f"{candidate2}: {percent_candidate2_dec}% ({total_candidate2})"
-result4 = f"{candidate3}: {percent_candidate3_dec}% ({total_candidate3}))"
+result4 = f"{candidate3}: {percent_candidate3_dec}% ({total_candidate3})"
 result5 = f"Winner: {winner}"
 lines = [title,space,result1,space,result2,result3,result4,space,result5, space]
 
